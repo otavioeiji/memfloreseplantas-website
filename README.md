@@ -1,3 +1,6 @@
+![GitHub language count](https://img.shields.io/github/languages/count/otavioeiji/memfloreseplantas-website)
+![GitHub top language](https://img.shields.io/github/languages/top/otavioeiji/memfloreseplantas-website)
+
 # memfloreseplantas-website
 :four_leaf_clover: M&amp;M Flores e Plantas - Website.
 
