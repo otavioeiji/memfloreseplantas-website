@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Verdana', 'Arial','Poppins', sans-serif;
+  src: url("../_fonts/Poppins/Poppins-Regular");
+}
+
+h2 {
+    color: #000;
+    margin-top: 60px;
+    font-family: 'Verdana', 'Arial','Poppins', sans-serif;
+}
+
+p {
+    color: #000;
+    font-family: 'Verdana', 'Arial','Poppins', sans-serif;
+}
+
+#fotos {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #ecedee;
+}
+
+#scroll {
+    position:fixed;
+    right:14px;
+    bottom:75px;
+    cursor:pointer;
+    width:40px;
+    height:40px;
+    background-color: gray;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    border-radius:60px;
+    border-radius:4px
+}
+
+@media (min-width: 992px) {
+    #scroll {
+        position:fixed;
+        right:14px;
+        bottom:52px;
+        cursor:pointer;
+        width:40px;
+        height:40px;
+        background-color: gray;
+        text-indent:-9999px;
+        display:none;
+        -webkit-border-radius:60px;
+        border-radius:60px;
+        border-radius:4px 
+    } 
+}
+
+.dropdown-item:hover {
+    color: crimson;
+}
+
+
+    
+
+    

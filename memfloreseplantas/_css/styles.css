@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Verdana', 'Arial','Poppins', sans-serif;
+  src: url("../_fonts/Poppins/Poppins-Regular");
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+	padding: 0;
+}
+
+/*===== CÓDIGO PARA O HAMBURGUER TOGGLE ICON DO MENU MOBILE =====*/
+.icon-bar {
+border-radius: 5px;
+width: 38px; 
+height: 2.5px;
+background-color: white;
+display: block;
+-webkit-transition: all 0.2s;
+transition: all 0.2s;
+margin-top: 8px
+}
+
+.navbar-toggler {
+border: none;
+background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+-webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+-webkit-transform-origin: 10% 10%;
+        transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+opacity: 0;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+color: black;
+}
+
+.navbar-toggler .bottom-bar {
+-webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+-webkit-transform-origin: 10% 90%;
+        transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+-webkit-transform: rotate(0);
+        transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+opacity: 1;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+-webkit-transform: rotate(0);
+        transform: rotate(0);
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #000;
+}
+/*===== FIM DO CÓDIGO PARA O HAMBURGUER TOGGLE ICON DO MENU MOBILE =====*/
+
+/*===== EFEITOS NAVBAR LINKS =====*/
+.navbar {
+	background-color: rgba(255,255,255,0.8);
+	top: -3px;
+	padding-bottom: 8px;
+    transition: .6s;
+}
+
+.navbar-nav {
+    padding: 8px 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #265d0d;	
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 1px 45px;
+	font-size: 19px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: .6s;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-family: 'Verdana', 'Arial','Poppins', sans-serif;
+        padding-right: 3.5rem;
+        color: #000;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        margin-bottom: -5px;
+    }
+}
+
+.navbar-expand-lg .navbar-nav {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Verdana', 'Arial','Poppins', sans-serif;
+}
+
+.navbar-dark .navbar-nav .active .nav-link {
+    color: white;
+    background: #265d0d;
+    border-radius: 5px;
+    padding: 5px;
+}
+/*===== FIM DE EFEITOS NAVBAR LINKS =====*/
+
+/*==== ANIMAÇÃO DROPDOWN ====*/
+.dropdown-item:hover {
+    color: crimson;
+}
+
+.dropbtn {
+    color: #265d0d;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-center {
+    display: none;
+    position: absolute;;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.dropdown-content-center a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.5s;
+}
+
+.dropdown-content-center a:hover {
+    background-color: #ddd;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content-center {
+    display: block;  
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown-toggle:after {
+    display: inline-block;
+    margin-left: -0.255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: transparent;
+    border-bottom: 0;
+    border-left: transparent;
+}
+/*==== FIM DA ANIMAÇÃO DROPDOWN ====*/
+
+h1 {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111;
+}
+
+@media (min-width: 300px) {
+    h1 {
+        padding-top: 250px;
+    }
+}
+
+@media (min-width: 568px){
+	h1{
+        padding-top: 150px;
+	}
+}
+
+@media (min-width: 768px){
+	h1{
+        font-size: 70px;
+        padding-top: 450px;
+	}
+}
+
+@media (min-width: 812px){
+	h1{
+        padding-top: 150px;
+	}
+}
+
+@media (min-width: 992px){
+	h1{
+        padding-top: 320px;
+	}
+}
+
+@media (min-width: 1024px){
+	h1{
+        font-size: 70px;
+        padding-top: 350px;
+	}
+}
+
+@media (min-width: 1366px){
+	h1{
+        font-size: 70px;
+        padding-top: 450px;
+	}
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width : 300px) and (max-width : 480px) {
+    h2 {
+        font-size: 32px;
+    }
+}
+
+p {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media (min-width : 768px) and (max-width : 1366px) {
+    p {
+        font-size: 32px;
+    }
+}
+
+/*=== IMAGEM LOGO ====*/
+.img_header {
+    width: 90px;
+    margin-top: -11px;
+    margin-bottom: -14px;
+    margin-left: 10px;
+}
+
+/*==== IMAGEM E DIV PRINCIPAL ====*/
+#img_home {
+    width: 100%;
+	height: 100vh;
+    background: url(../_img/suculenta.jpg);
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width : 300px) and (max-width : 480px) {
+	#img_home {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: url("../_img/suculenta_mobile.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+	}
+}
+
+@media (min-width : 667px) {
+	#img_home {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: url("../_img/suculenta.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+	}
+}
+/*==== FIM DO CÓDIGO ====*/
+
+/*==== IMAGEM E DIV SEJA-BEM-VINDO ====*/
+#img_sbv {
+    background: url(../_img/ciclame.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media only screen and (min-width : 300px) and (max-width : 480px) {
+	#img_sbv {
+        background: url(../_img/ciclame_mobile.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 60px;
+        padding-bottom: 60px;
+	}
+}
+
+.sbv h2 {
+    text-align: center;
+}
+
+.mm {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.midia {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.row {
+	margin: 0;
+}
+
+/*==== ANIMAÇÃO DATA-ANIME =====*/
+[data-anime] {
+    opacity: 0;
+    transition: 1.6s;
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -100px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 100px, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+/*==== FIM DA ANIMAÇÃO DATA-ANIME =====*/
+
+#rodape {
+	background: #173519;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    text-align: center;
+}
+
+.link-footer {
+    color: crimson;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.link-footer:hover {
+    font-size: 1.4em;
+	text-decoration: none;
+    color: gray;
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/*==== BOTÃO SCROLL TO TOP ====*/
+#scroll {
+    position:fixed;
+    right: 14px;
+    bottom: 80px;
+    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    text-indent: -9999px;
+    display:none;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border-radius: 4px
+}
+
+@media (min-width: 992px) {
+    #scroll {
+        position:fixed;
+        right: 14px;
+        bottom: 60px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        text-indent: -9999px;
+        display: none;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border-radius: 4px 
+    } 
+}
+
+#scroll:hover {
+    background-color: #265d0d;
+    transition: 1s;
+}
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#fff;
+}
+/*==== FIM DO CÓDIGO ====*/
+
+
+
